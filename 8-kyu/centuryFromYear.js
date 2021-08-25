@@ -6,11 +6,15 @@
 // centuryFromYear(1601)  returns (17)
 // centuryFromYear(2000)  returns (20)
 
+// function century(year) {
+//   if (year % 100 === 0) {
+//     return Math.floor(year / 100);
+//   }
+//   return Math.floor(year / 100 + 1);
+// }
+
 function century(year) {
-  if (year % 100 === 0) {
-    return Math.floor(year / 100);
-  }
-  return Math.floor(year / 100 + 1);
+  return math.ceil(year / 100);
 }
 
-century(1980);
+// https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097/solutions/javascript
